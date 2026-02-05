@@ -1,5 +1,7 @@
 const express=require('express');
 const app= express();
+const cors=require('cors');
+app.use(cors());
 const port=3000;
 const router =require('./routes/tasks')
 app.use(express.json());
